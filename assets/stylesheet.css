@@ -71,7 +71,7 @@ header h2 {
 }
 .content-grid {
     background-color: 158, 201, 201;
-    border: 3px dashed rgb(0, 181, 252);
+    border: 3px solid rgb(0, 181, 252);
     align-items: flex-start;
     text-align: center;
     color: white;
