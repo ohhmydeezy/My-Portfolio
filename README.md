@@ -25,7 +25,7 @@ Step 3: Wireframing:
 
 // All great designs begin as an idea, with this in mind , I spent some time thinking of how i want the page to look and how this would be best achieved, I made the wireframe usign google slides.
 
-![Wireframe](./assets/images/Screenshot-2023-12-05 at 18.25.21.png)
+![Wireframe](./assets/images/wireframe.png)
 
 Step 3: Creating the code: 
 
@@ -37,7 +37,7 @@ Step 4: Creating a HTML file:
 
 // in additon to this creating sections within the HTML, helped to visualise each section and understand the get a better understanding where something was not working if an error occurs. It also made it easier to read the code. 
 
-![HTML-sections](./assets/images/Sectioned-screenshop.png)
+![HTML-sections](./assets/images/Sectioned%20screenshop.png)
 
 Step 5: Creating the CSS stylesheet: 
 
