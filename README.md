@@ -45,7 +45,7 @@ Step 5: Creating the CSS stylesheet:
 
 Usage: 
 
-    the page will be used as my portfolio, where all of my future projects will live, in additon to this, as the my skills improve and evolve, my portfolio will also evolve to reflect my aquired skills.
+    the page will be used as my portfolio, where all of my future projects will live, in additon to this, as the my skills improve and evolve, my portfolio will also evolve to reflect my aquired skills, there is currently one project within the section as there has been one project completed on the course, therefore only one of the images is a aclickable link, as more projects are completed, the coming soon images will be replaced with links to projects. 
 
 ![Projects](./assets/images/projects.png)
 
