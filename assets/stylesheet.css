@@ -5,13 +5,17 @@ body {
 .nav-bar {
     background-color: black;
     padding: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     padding: 10px;
     text-align: right;
+    font-size: 20px;
 }
+
 .nav-bar a {
     text-decoration: none;
     color: white;
+    margin: 5px;
 }
 
 header h1 {
@@ -19,8 +23,9 @@ header h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 100px;
     -webkit-text-stroke: 1px #111;
-    
+
 }
+
 .banner {
     background: url(../assets/images/cloud\ background\ image.jpeg);
     background-repeat: no-repeat;
@@ -29,9 +34,11 @@ header h1 {
     background-size: cover;
     background-position: 69%;
 }
+
 .banner-content {
     color: white;
     padding: 150px;
+    text-align: center;
 }
 
 .banner-content img {
@@ -39,36 +46,37 @@ header h1 {
     align-content: center;
     justify-content: center;
 }
+
 header h2 {
     text-align: center;
     font-size: 50px;
     -webkit-text-stroke: 1px #111;
 }
+
 .coding-languages {
     background-image: linear-gradient(white, rgb(158, 201, 201));
     color: white;
     text-align: center;
     padding: 5px;
 }
+
 .coding-languages li {
     display: inline;
     text-align: center;
     padding: 5px;
 }
 
-.container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
+    grid-gap: 3px;
+    justify-items: center;
+    width: auto;
 }
+
+
 .content-grid {
     background-color: 158, 201, 201;
     border: 3px solid rgb(0, 181, 252);
@@ -77,26 +85,33 @@ header h2 {
     color: white;
 
 }
-.content-grid:hover, .container {
-    box-shadow: inset white, white;
+
+.content-grid:hover,
+.container {
+    box-shadow: inset #111 black;
 }
+
 .content-grid p {
     padding: 5px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 5px;
+    text-align: justify;
 }
+
 .content-grid h4 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     -webkit-text-stroke: 1px black;
     padding: 5px;
     letter-spacing: 1px;
 }
+
 .content-grid h5 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color:rgb(158, 201, 201) ;
+    color: rgb(158, 201, 201);
     -webkit-text-stroke: 1px white;
     padding: 5px;
 }
+
 .projects {
     display: flex;
     align-items: center;
@@ -120,20 +135,20 @@ header h2 {
     height: 500px;
     margin: 10px;
     border-radius: 50px;
-    background: url(../assets/images/coming\ soon.webp);
+    background: url(../assets/images/refactor.png);
     background-size: cover;
     background-position: center;
     position: relative;
     transition: width 0.5s;
 }
 
-.img-box:nth-child(2){
+.img-box:nth-child(2) {
     background: url(../assets/images/blue\ coming\ soon.jpeg);
     background-size: cover;
     background-position: center;
 }
 
-.img-box:nth-child(3){
+.img-box:nth-child(3) {
     background: url(../assets/images/coming-soon-yellow-background-design_1017-37084.avif);
     background-size: cover;
     background-position: center;
@@ -143,15 +158,16 @@ header h2 {
     color: white;
     position: absolute;
     top: auto;
-   right: 20px;
-   opacity: 0;
-   transition: top 0.5s, opacity 0.5s;
+    right: 20px;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
 }
 
 .img-box:hover {
     width: 300px;
     cursor: pointer;
 }
+
 .img-box:hover h3 {
     opacity: 1;
     top: 25px
@@ -164,12 +180,13 @@ footer {
     padding: 5px;
     height: 400px;
 }
+
 footer a {
     font-size: 30px;
     margin: 5px;
     text-align: center;
-   
 }
+
 .footer-bottom {
     bottom: px;
     left: 0px;
@@ -178,20 +195,37 @@ footer a {
 }
 
 
-@media (max-width:790px) {
-    .banner-content h1 {
+
+@media (max-width: 977px) {
+    header h1 {
         font-size: 70px;
     }
-    
-    .banner-content h2 {
-        font-size: 0.8rem;
+
+    header h2 {
+        font-size: 40px;
     }
 
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "about-me-content"
+            "project-content"
+            "resume-content";
+        height: auto;
+        width: 100%;
+    }
 }
 
-#contact-sheet {
-    padding: 10px;
-    display: block;
-    align-items: center;
-    
+@media (max-width: 588px) {
+    header h1 {
+        font-size: 40px;
+    }
+    header h2 {
+        font-size: 30px;
+    }
+
+    .grid-container {
+        width: 50% auto;
+    }
+
 }
